@@ -1,0 +1,93 @@
+/* Body Styling */
+body {
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Center Container */
+.center {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Words Styling */
+.words {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+/* Yes Button */
+.green {
+    background-color: limegreen;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.green:hover {
+    background-color: darkgreen;
+}
+
+/* No Button */
+.running-button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative; /* Para ma-move siya freely */
+    transition: transform 0.3s ease-out;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+    gap: 1rem; /* Space between items */
+    max-width: 40%; /* Limit container width */
+    max-height: 100%; /* Limit container height */
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden; /* Prevent images from overflowing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better UI */
+}
+
+/* Image Styling */
+.containers > div {
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+    overflow: hidden; /* Ensures images don't overflow the container */
+    aspect-ratio: 1 / 1; /* Makes each item square */
+    display: flex; /* Center the image inside the container */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.containers img {
+    max-width: 100%; /* Ensures images fit inside their containers */
+    max-height: 100%; /* Ensures images fit inside their containers */
+    object-fit: contain; /* Ensures images maintain aspect ratio without cropping */
+    border-radius: 1rem; /* Optional: Adds rounded corners to images */
+}
